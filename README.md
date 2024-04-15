@@ -6,3 +6,4 @@ My own azure resume challenge following [this guide](https://cloudresumechalleng
 - Frontend folder contains the website.
 - main.js contains visitor counter code.
 
+- Added new picture.
