@@ -803,5 +803,18 @@ properly.
 }
 
 
+/* Anpassa utseendet på listan */
+.skills-list {
+   list-style-type: none; /* Ta bort punktmarkering */
+   padding: 0; /* Ta bort standardmarginal */
+}
+
+/* Anpassa utseendet på punkterna */
+.skills-list li {
+   background-color: #2B2B2B;
+   padding: 10px;
+   margin-bottom: 10px; /* Avstånd mellan punkter */
+   border-radius: 5px;
+}
 
 
