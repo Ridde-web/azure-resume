@@ -803,17 +803,17 @@ properly.
 }
 
 
-/* Anpassa utseendet på listan */
+/* Looks on list */
 .skills-list {
-   list-style-type: none; /* Ta bort punktmarkering */
-   padding: 0; /* Ta bort standardmarginal */
+   list-style-type: none;
+   padding: 0; 
 }
 
-/* Anpassa utseendet på punkterna */
+/* Looks on points */
 .skills-list li {
    background-color: #2B2B2B;
    padding: 10px;
-   margin-bottom: 10px; /* Avstånd mellan punkter */
+   margin-bottom: 10px; 
    border-radius: 5px;
 }
 
