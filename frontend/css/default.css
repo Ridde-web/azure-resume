@@ -803,18 +803,5 @@ properly.
 }
 
 
-/* Looks on list */
-.skills-list {
-   list-style-type: none;
-   padding: 0; 
-}
-
-/* Looks on points */
-.skills-list li {
-   background-color: #2B2B2B;
-   padding: 10px;
-   margin-bottom: 10px; 
-   border-radius: 5px;
-}
 
 
