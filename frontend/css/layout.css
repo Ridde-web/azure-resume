@@ -33,23 +33,13 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: url(../images/header_background.jpg) no-repeat top center;
+   background: url(../images/header_background_darker.jpg) no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
    overflow: hidden;
 }
 
-header::after {
-   content: ''; /* Skapar ett pseudo-element för att använda som overlay */
-   position: absolute; /* Absolut position relativt till förälderelementet (.header) */
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-color: rgba(0, 0, 0, 0.5); /* Bakgrundsfärg för overlay (svart med 50% opacitet) */
-   z-index: 1; /* Säkerställ att overlay ligger över bakgrundsbilden */
-}
 
 /* vertically center banner section */
 header:before {
