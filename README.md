@@ -19,5 +19,3 @@ Challenges:
 - [ ] Enable HTTPS and custom domain support.
 - [ ] Set up GitHub Actions.
 - [ ] Write a blog post.
-
-## My Progress
