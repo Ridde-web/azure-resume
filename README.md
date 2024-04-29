@@ -15,7 +15,7 @@ Challenges:
 - [x] Create a GitHub repo.
 - [x] Use HTML and CSS to build the website and store the code in the repo.
 - [x] Add a visitor count to the website.
-- [ ] Deploy the website to Azure Blob Storage.
+- [x] Deploy the website to Azure Blob Storage.
 - [ ] Enable HTTPS and custom domain support.
 - [ ] Set up GitHub Actions.
 - [ ] Write a blog post.
