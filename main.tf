@@ -1,13 +1,32 @@
 # Fetches the configuration for current Azure client
 data "azurerm_client_config" "current" {}
 
-# 1. Create a resource group
+# Provides the configuration for Azure Provider, its source and version being used
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "=3.0.0"
+    }
+  }
+}
+
+# Configure the AzureRM Provider
+provider "azurerm" {
+  features {}
+}
+
+# Creates a Resource Group to logically contain resources
 resource "azurerm_resource_group" "arc-rg" {
   name     = "azureresume-rg"
   location = var.resource_group_location
+  tags = {
+    environment = "dev"
+    source      = "Terraform"
+  }
 }
 
-# 2. Create a resource account
+# Create a resource account
 resource "azurerm_storage_account" "arc-storage" {
   name                            = "dawidarcstorage"
   resource_group_name             = azurerm_resource_group.arc-rg.name
@@ -23,14 +42,14 @@ resource "azurerm_storage_account" "arc-storage" {
   }
 }
 
-# 3. Create a resource container
+# Create a resource container
 resource "azurerm_storage_container" "static-page" {
-  name = "static-web-page"
+  name                  = "static-web-page"
   storage_account_name  = azurerm_storage_account.arc-storage.name
   container_access_type = "private"
 }
 
-# 4. Create a blob
+# Create a blob
 resource "azurerm_storage_blob" "html-code" {
   name                   = "index.html"
   storage_account_name   = azurerm_storage_account.arc-storage.name
