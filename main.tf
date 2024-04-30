@@ -49,7 +49,7 @@ resource "azurerm_storage_container" "static-page" {
   container_access_type = "private"
 }
 
-# Create a blob
+# Create a blob with index.html file
 resource "azurerm_storage_blob" "html-code" {
   name                   = "index.html"
   storage_account_name   = azurerm_storage_account.arc-storage.name
